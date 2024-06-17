@@ -1,0 +1,10 @@
+[[ {
+  "transformer" : "remove",
+  "spec" : [ {
+    "path" : "page|categories/persistent|new"
+  }, {
+    "path" : "eventPageUrl"
+  }, {
+    "path" : "isCurrentUserParticipating"
+  } ]
+} ]]
