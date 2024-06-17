@@ -1,0 +1,98 @@
+[  
+	{  
+		"id":"1",
+		"pageId":1,
+		"location":"Richardson",
+		"maxParticipants":10,
+		"page":{  
+		     "indexable":true,
+		     "rootLevel":false,
+		     "homePage":false,
+		     "latestVersion":true,
+		     "current":true,
+		     "deleted":false,
+		     "draft":false,
+		     "unpublished":false,
+		     "versionCommentAvailable":false,
+		     "persistent":true,
+		     "removed":false
+		},
+       "date":"15.02.17",
+       "startTime":"09:00",
+       "endTime":"16:30",
+       "categories":[  
+		{  
+			"label":"cat1",
+			"id":1,
+			"addarr":[
+				{
+					"label" : "1",
+					"values":[  
+						{
+							"page" : {  
+					     		"id":"11"
+							}
+						},
+						{
+							"page" : {  
+					     		"id":"12"
+							}
+						}
+					]
+				},
+				{
+					"label" : "2",
+					"values":[  
+						{
+							"page" : {  
+					     		"id":"21"
+							}
+						},
+						{
+							"page" : {  
+					     		"id":"22"
+							}
+						}
+					]
+				}
+			]
+		},
+		{  
+			"label":"cat2",
+			"id":2,
+			"addarr":[
+				{
+					"label" : "1",
+					"values":[  
+						{
+							"page" : {  
+					     		"id":"11"
+							}
+						},
+						{
+							"page" : {  
+					     		"id":"12"
+							}
+						}
+					]
+				},
+				{
+					"label" : "2",
+					"values":[  
+						{
+							"page" : {  
+					     		"id":"21"
+							}
+						},
+						{
+							"page" : {  
+					     		"id":"22"
+							}
+						}
+					]
+				}
+			]
+		}		
+      ]       
+	}
+]

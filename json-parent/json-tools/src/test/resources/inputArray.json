@@ -1,0 +1,32 @@
+[
+{
+  "transformer" : "remove1",
+  "spec" : [ {
+    "path" : "page|categories/persistent|new"
+  }, {
+    "path" : "eventPageUrl"
+  }, {
+    "path" : "isCurrentUserParticipating"
+  } ]
+},
+{
+  "transformer" : "remove2",
+  "spec" : [ {
+    "path" : "page|categories/persistent|new"
+  }, {
+    "path" : "eventPageUrl"
+  }, {
+    "path" : "isCurrentUserParticipating"
+  } ]
+},
+{
+  "transformer" : "remove3",
+  "spec" : [ {
+    "path" : "page|categories/persistent|new"
+  }, {
+    "path" : "eventPageUrl"
+  }, {
+    "path" : "isCurrentUserParticipating"
+  } ]
+}
+]

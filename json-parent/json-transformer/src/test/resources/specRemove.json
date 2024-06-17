@@ -1,0 +1,9 @@
+[
+    {
+        "transformer": "remove",
+        "spec": [
+        	{ "path" : "page|categories/persistent|removed" },
+        	{ "path" : "location" }
+        ]
+    }
+]
