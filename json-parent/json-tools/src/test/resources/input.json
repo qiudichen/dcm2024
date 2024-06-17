@@ -1,0 +1,42 @@
+[  
+{  
+	"uuid":"cac40601-ffc9-4fd0-c5a1-772ac65f0587",
+	"pageId":123456,
+	"location":"Berlin",
+	"maxParticipants":10,
+	"page":{  
+	     "indexable":true,
+	     "rootLevel":false,
+	     "homePage":false,
+	     "latestVersion":true,
+	     "current":true,
+	     "deleted":false,
+	     "draft":false,
+	     "unpublished":false,
+	     "versionCommentAvailable":false,
+	     "persistent":true,
+	     "new":false
+	  },
+      "date":"15.02.17",
+      "startTime":"09:00",
+      "endTime":"16:30",
+      "start":1487145600000,
+      "end":1487172600000,
+      "hasStartTime":true,
+      "hasEndTime":true,
+      "eventPageUrl":"/some/url",
+      "categories":[  
+         {  
+            "label":"Test",
+            "id":123,
+            "belongsToEvents":true,
+		     "unpublished":false,
+		     "versionCommentAvailable":false,
+		     "persistent":true,
+		     "new":false            
+         }
+      ],
+      "isCurrentUserParticipating":false,
+      "fullTitle":"Test Page"
+}
+]

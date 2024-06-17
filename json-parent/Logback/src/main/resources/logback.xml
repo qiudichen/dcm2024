@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+
+<configuration>
+    <import class="ch.qos.logback.classic.encoder.PatternLayoutEncoder" />
+    <import class="ch.qos.logback.core.ConsoleAppender" />
+	<contextListener class="org.Logback.config.LoggerStartupListener"/>
+	
+    <appender name="STDOUT" class="ConsoleAppender">
+        <encoder class="PatternLayoutEncoder">
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} -- %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="LOG_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/dev.log</file>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] [-${TENANT_ID}-] %-5level %logger{36} -- %msg%n</pattern>
+        </encoder>
+    </appender>
+    
+    <appender name="APP_FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/report.log</file>
+        <encoder class="org.Logback.common.ReportPatternLayoutEncoder">
+            <pattern>
+                %date|||%-4relative|||[%thread]|||%-5level|||%marker|||%msg%n
+            </pattern>
+        </encoder>     
+    </appender>
+    <!-- 
+    	additivity must be false. In this case, any log message will go to APP_FILE directly 
+    	does not pass them to the ROOT logger
+        <appender-ref ref="APP_FILE" />
+     -->
+    <logger name="org.Logback.LoggerReportWithData" 
+    		additivity="false" 
+    		level="debug">
+	</logger>
+
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="LOG_FILE" />
+    </root>
+    
+    <shutdownHook class="ch.qos.logback.core.hook.DefaultShutdownHook">
+        <delay>1000</delay>
+    </shutdownHook>    
+</configuration>

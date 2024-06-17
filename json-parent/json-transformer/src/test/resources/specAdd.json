@@ -1,0 +1,11 @@
+[
+    {
+        "transformer": "add",
+        "spec": [
+        	{ "path" : "page", "label" : "newlabel", "value" : "132"},
+        	{ "label" : "newlabel", "value" : "abc"},
+        	{ "path" : "categories/addarr/values", "label" : "newlabel", "value" : "abc123"},
+        	{ "path" : "categories/addarr/values/page", "label" : "newlabel", "value" : "abc-123"}
+        ]
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "transformer": "move",
+        "spec": [
+        	{ "from" : "page/homePage", "to" : "homePage" },
+        	{ "from" : "pageId", "to" : "page/pageId" }
+        ]
+    }
+]
